@@ -5,4 +5,11 @@ spring:
     config:
       server:
         git:
-          uri: 
+          uri: https://github.com/tomascanna/Spring-Boot-y-Spring-Cloud.git
+          searchPath: config-data
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
+  security:
+    user:
+      name: root
+      password: s3cr3t
